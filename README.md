@@ -80,9 +80,10 @@ https://github.com/ifioklee/Amazon-Products-Rating-and-Review-Analysis./tree/mai
 Interactive Power BI file:  
 https://github.com/ifioklee/Amazon-Products-Rating-and-Review-Analysis./blob/main/Amazon%20Products%20Ratings%20%26%20Reviews%20Analysis.pbix
 
-### DAX Formulas
+### Amazon Sales – DAX Measures
 
-File cotaining all DAX formulas:  
+File cotaining all DAX formulas: 
+https://github.com/ifioklee/Amazon-Products-Rating-and-Review-Analysis./blob/main/Amazon%20Sales%20%E2%80%93%20DAX%20Measures
 
 ---
 
