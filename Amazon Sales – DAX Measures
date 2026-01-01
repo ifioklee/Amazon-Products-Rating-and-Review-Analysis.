@@ -1,0 +1,100 @@
+# Amazon Sales – DAX Measures
+
+This document contains key **DAX measures** used for analyzing product ratings, reviews, and pricing behavior in the Amazon Sales dataset.
+
+---
+
+## Average Rating
+
+Calculates the average rating across all reviews.
+
+```DAX
+Average Rating =
+AVERAGE ( 'Amazon Sales'[rating] )
+```
+
+---
+
+## Maximum Average Rating
+
+Returns the highest average rating among all products.
+
+```DAX
+Maximum Average Rating =
+CALCULATE(
+    MAXX(
+        VALUES('Amazon Sales'[product_name]),
+        'DAX Formulas'[Average Rating]
+    )
+)
+```
+
+---
+
+## Minimum Average Rating
+
+Returns the lowest average rating among all products.
+
+```DAX
+Minimum Average Rating =
+CALCULATE(
+    MINX(
+        VALUES('Amazon Sales'[product_name]),
+        'DAX Formulas'[Average Rating]
+    )
+)
+```
+
+---
+
+## Number of Products Rated 5
+
+Counts the total number of reviews with a 5‑star rating.
+
+```DAX
+Number of Products Rated 5 =
+CALCULATE(
+    COUNTROWS('Amazon Sales'),
+    'Amazon Sales'[rating] = 5
+)
+```
+
+---
+
+## Number of Products Without Discount
+
+Counts distinct products where the actual price equals the discounted price.
+
+```DAX
+Number of Products Without Discount =
+CALCULATE(
+    DISTINCTCOUNT('Amazon Sales'[product_id]),
+    'Amazon Sales'[actual_price] = 'Amazon Sales'[discounted_price]
+)
+```
+
+---
+
+## Total Reviews
+
+Counts the total number of reviews in the dataset.
+
+```DAX
+Total Reviews =
+COUNTROWS('Amazon Sales')
+```
+
+---
+
+## Unique Reviewers
+
+Counts the number of distinct users who left reviews.
+
+```DAX
+Unique Reviewers =
+DISTINCTCOUNT('Amazon Sales'[user_id])
+```
+
+---
+
+*Use this file directly as a `.md` file in GitHub or project documentation.*
