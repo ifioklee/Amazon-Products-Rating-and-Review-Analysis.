@@ -26,7 +26,7 @@ It also involved the use of **DAX** for calculations and logical measures.
 
 ## Project Goal
 
-The primary goal of this project is to analyss the data within the dataset, derive various insight in the process and visualize insights through an **interactive Power BI dashboard**.
+The primary goal of this project is to analyse the data within the dataset, derive various insight in the process and visualize insights through an **interactive Power BI dashboard**.
 
 The final interactive dashboard will 
 
