@@ -96,5 +96,3 @@ DISTINCTCOUNT('Amazon Sales'[user_id])
 ```
 
 ---
-
-*Use this file directly as a `.md` file in GitHub or project documentation.*
